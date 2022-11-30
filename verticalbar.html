@@ -24,15 +24,43 @@
             
         }   
 
-     /*    .inner-bar1{
-            padding-top: 30px;
-            margin: auto;
-            width: 45px;
-            height: 30px;
-            background-color: black;
-            display: inline-block;
+        .inner-bar1{
+            animation-name: bar1;
+            animation-duration: 3s;
+            background:  linear-gradient(to top, grey 20%, white 70%);
+        }
+         @keyframes bar1{
+            
+            0%{height: 0%;}
+            100%{height: 300px;}
+   
+        } 
 
-        } */
+        .inner-bar2{
+            animation-name: bar2;
+            animation-duration: 3s;
+            background: linear-gradient(to top, grey 40%, white 60%);
+        }
+
+        @keyframes bar2{
+            
+            0%{height: 0%;}
+            100%{height: 300px;}
+   
+        } 
+
+        .inner-bar3{
+            animation-name: bar3;
+            animation-duration: 3s;
+            background: linear-gradient(to top, grey 80%, white 20%);
+        }
+        @keyframes bar3{
+            
+            0%{height: 0%;}
+            100%{height: 300px;}
+   
+        } 
+     
     </style>
 
 </head>
@@ -42,11 +70,9 @@
     <br><br><br>
     <div class="outer_div">
         <br><br><br>
-        <div class="vertical-bar">
-            <div class="inner-bar1"></div>
-        </div> &nbsp;&nbsp;
-        <div class="vertical-bar"></div> &nbsp;&nbsp;
-        <div class="vertical-bar"></div>
+        <div class="vertical-bar inner-bar1"></div> &nbsp;&nbsp;
+        <div class="vertical-bar inner-bar2"></div> &nbsp;&nbsp;
+        <div class="vertical-bar inner-bar3"></div>
         <div><p>30% &nbsp;&nbsp;&nbsp;&nbsp; 40% &nbsp;&nbsp;&nbsp;&nbsp; 80%</p></div>
         <div> <h2>Bar Plot</h2></div>
        
