@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation Menu</title>
+
+        <style>
+            .div1{
+                background-color:brown;
+                width: 100%;
+                height: 50px;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-weight: bold;
+                font-size: 40px;
+            }
+            .navigationdiv{
+                width: 100%;
+                height: 40px;
+                background-color: gray;
+                padding-left: 20px;
+                padding-top: 10px;
+            }
+
+            .link{
+                color:white;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 20px;
+                padding: 0.75em;
+                
+            }
+
+            .link-content{
+                display: none;
+                position: absolute;
+                background-color: lightgray;
+                padding-right: 2px;
+                padding-left: 2px;
+                list-style: none;
+
+            }
+
+            .link-content > li > a{
+                text-decoration: none;
+            }
+
+            .link:hover{
+                background-color:black;
+
+            }
+
+          .link2{
+            position: relative;
+          }
+
+          .link2:hover+.link-content
+          {display: block;}
+
+          .link3:hover+.link-content
+          {display: block;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="div1">Demo of DropDown</div>
+        <div class="navigationdiv">
+            <a class="link" href="">Link 1</a>
+            <a class="link link2">Link 2</a>
+            <ul class="link-content" style="margin-left: 90px;">
+                <li><a href="">DD Link1</a></li>
+                <li><a href="">DD Link2</a></li>
+                <li><a href="">DD Link3</a></li>
+                </ul>
+            <a class="link link3" href="">Link 3</a>
+            <ul class="link-content" style="margin-left: 180px;"> 
+                <li><a href="">DD Link1</a></li>
+                <li><a href="">DD Link2</a></li>
+                <li><a href="">DD Link3</a></li>
+                </ul>
+        </div>
+
+    </body>
+</html>
